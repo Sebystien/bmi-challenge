@@ -5,8 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
   
-  <title>Frontend Mentor | Body Mass Index Calculator</title>
+  <title>Built with lack of sleep | Body Mass Index Calculator</title>
 </head>
 <body>
 
@@ -18,7 +21,22 @@
 
     <div class="header__bg"></div>
 
-    <div class="header__hero"></div>
+    <div class="hero">
+      <div class="header__hero">
+        <h1 class="header__title">
+          Body Mass Index Calculator
+        </h1>
+
+        <p class="header__description">
+          Better understand your weight in relation to your height using our 
+          body mass index (BM) calculator. While BMI is not the sole determinant 
+          of a healthy weight, it offers a valuable starting point to evaluate 
+          your overall health and well-being.
+        </p>
+
+
+
+      </div>
 
     <form action="#" class="header__form">
       <h3>Enter your details below</h3>
@@ -33,26 +51,25 @@
       </div>
       <!--Input text-->
       <div class="form__input-text">
-        <input type="text" name="" id="" placeholder="ft">
+        <div>
+          <label for="height">Height</label>
+          <input type="text" name=""  placeholder="ft" id="height">
+        </div>
+        <div>
+          <label for="weight">Weight</label>
+          <input type="text" name="weight"  placeholder="ft" id="weight">
+        </div>
+      </div>
+
+      <div class="form__results">
+        your bmi is
       </div>
     </form>
+    </div>
 
-  Body Mass Index Calculator
+  
 
-  Better understand your weight in relation to your height using our 
-  body mass index (BM) calculator. While BMI is not the sole determinant 
-  of a healthy weight, it offers a valuable starting point to evaluate 
-  your overall health and well-being.
-
-  Enter your details below
-
-  Metric
-  Imperial
-
-  Height
-  Weight
-
-  Your BMI is...
+  
 
   <!-- add score -->
 
