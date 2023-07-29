@@ -9,10 +9,23 @@
     --clr-light-grey: hsl(200, 24%, 88%);
     --white: hsl(0, 0%, 100%);
 
+    --gradient: linear-gradient(-45deg, hsl(215, 95%, 92%), hsl(185, 79%, 95%));
+
     --font: 'Inter', sans-serif;
     --fw-bold: 700;
     --fw-semi-b: 600;
     --fw-regular: 400;
+
+    --ft-base: 62.5%;
+
+    --fz-small: 1.4rem;
+    --fz-regular: 1.6rem;
+
+    --fz-h-s: 2rem;
+    --fz-h-m: 2.4rem;
+    --fz-h-l: 4.8rem;
+    --fz-h-xl: 6.4rem;
+
   
 
 }
@@ -26,6 +39,72 @@
 
 }
 
+html{
+    font-size: var(--ft-base);
+    box-sizing: border-box;
+}
+
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font);
+    font-size: var(--fz-regular);
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    width: 100%;
+    min-height: auto;
+}
+
+h1{
+    color: var(--clr-dark-blue);
+}
+
+.row{
+    max-width: 114rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*------* HEADER *---------*/
+header{
+    padding-top: 3.2rem;
+    text-align: center;
+    position: relative;
+}
+
+.header__logo{
+    width: 4rem;
+    margin: 0 auto 2.4rem;
+}
+
+.header__bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 4rem 4rem;
+    z-index: -1;
+    background-image:var(--gradient);
+}
+
+.header__title{
+    font-size: var(--fz-h-l);
+    line-height: 110%;
+    margin-bottom: 2.4rem;
+    
+}
+
+.header__text{
+    width: 90%;
+    margin: 0 auto 4.8rem;
+}
+
+.header__form{
+    background: var(--white);
 }
